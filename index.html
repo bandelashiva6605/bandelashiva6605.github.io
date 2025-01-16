@@ -3,132 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PythonAndFullStack</title>
+    <title>Python And Full Stack</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-    .medium-image {
-        width: 200px; /* Adjust as needed */
-        height: auto; /* This maintains the aspect ratio */
-    }
-
-    .jumbotron {
-        background-color: #333; /* Change background color */
-        color: #fff; /* Text color */
-        overflow: hidden;
-        white-space: nowrap;
-    }
-
-
-    .jumbotron p {
-        animation: slideText 20s linear infinite;
-    }
-
-    @keyframes slideText {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-
-
         body {
             background-color: #f4f4f4;
         }
         .jumbotron {
-            background-image: url('https://tse1.mm.bing.net/th?id=OIP.gCZRWvepgNfcvXFjTkYqxgHaEN&pid=Api&P=0&h=220'); /* Replace with your institution image */
+            background-image: url('https://tse1.mm.bing.net/th?id=OIP.gCZRWvepgNfcvXFjTkYqxgHaEN&pid=Api&P=0&h=220');
             background-size: cover;
             color: #fff;
             text-align: center;
-            padding: 100px 0;
+            padding: 80px 20px;
+        }
+        .course-table {
+            margin: 20px auto;
+        }
+        .course-table td {
+            padding: 20px;
+            text-align: center;
+            vertical-align: top;
         }
         .course-img {
             width: 200px;
             height: 200px;
             border-radius: 10px;
-            margin-bottom: 20px;
         }
-
-        .contact-btns {
-       margin-top: 20px;
-       margin-right: 20px;
-       margin-left: 20px;
-       margin-bottom: 20px;
-   }
+        h1, h3 {
+            color: #333;
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
 
-  <div class="jumbotron">
+<div class="jumbotron">
     <h1>Tech Courses</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <div class="instructor">
-                    <img src="shivabandela.jpeg" alt="Instructor" class="medium-image">
-                    <h3>Shiva Bandela</h3>
-                    <p>Join our dynamic programming platform led by Shiva Bandela for an immersive journey into coding mastery. Emphasizing core logic over rote learning, delve into Python's versatile world. Explore web development essentials like HTML5,CSS5,Django,Javascript, paving your path to expertise. Stay tuned for thrilling content on Machine Learning, Deep Learning, and Android App Development with Kotlin. Kickstart your coding journey today and unlock limitless possibilities!</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <p>Join Shiva Bandela for an immersive journey into programming mastery.</p>
 </div>
-
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="text-center">
-                <img src="https://tse4.mm.bing.net/th?id=OIP.QkSSprAmEIPRhirfLO8L3QHaEK&pid=Api&P=0&h=220" alt="Course 1" class="course-img"> <!-- Replace with course 1 image -->
+    <table class="course-table">
+        <tr>
+            <td>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.QkSSprAmEIPRhirfLO8L3QHaEK&pid=Api&P=0&h=220" alt="Basic Python" class="course-img">
                 <h3>Basic Coding using Python</h3>
-                <!-- Replace "course1_link" with the actual link for course 1 -->
-                <a href="https://youtube.com/playlist?list=PLMZzeNdaHr6hc9ad_Q6YZwLzchrTRNCBl&feature=shared" class="btn btn-primary">click here for Basic Programming using Python</a>
-            </div>
-      
-        <div class="col-md-4">
-            <div class="text-center">
-                
-                <img src="https://tse4.mm.bing.net/th?id=OIP.QkSSprAmEIPRhirfLO8L3QHaEK&pid=Api&P=0&h=220" alt="Course 2" class="course-img"> <!-- Replace with course 2 image -->
+                <a href="https://youtube.com/playlist?list=PLMZzeNdaHr6hc9ad_Q6YZwLzchrTRNCBl&feature=shared" class="btn btn-primary">Basic Programming</a>
+            </td>
+            <td>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.QkSSprAmEIPRhirfLO8L3QHaEK&pid=Api&P=0&h=220" alt="Advanced Python" class="course-img">
                 <h3>Advanced Coding using Python</h3>
-                <!-- Replace "course2_link" with the actual link for course 2 -->
-                <a href="https://youtube.com/playlist?list=PLMZzeNdaHr6iXLpY5Ee73ynjGpkW9QsXs&feature=shared" class="btn btn-primary">click here for More Advanced Programming using Python</a>
-            </div>
-        </div> 
-              </div>
-        <div class="col-md-4">
-            <div class="text-center">
-                <img src="data:image/png;base64,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" alt="Course 2" class="course-img"> <!-- Replace with course 2 image -->
+                <a href="https://youtube.com/playlist?list=PLMZzeNdaHr6iXLpY5Ee73ynjGpkW9QsXs&feature=shared" class="btn btn-primary">Advanced Programming</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2W3L6Zuv5Ogc6vJIK8u1wGKqxkB7aatZPEGsPn59auB-ya2-m82AE6vY&s" alt="SQL" class="course-img">
                 <h3>SQL</h3>
-                <!-- Replace "course2_link" with the actual link for course 2 -->
-                <a href="https://www.youtube.com/watch?v=z2MaZgo-jfo&list=PLMZzeNdaHr6g4SXEvAHC9KH4plSB4L6uu">click here for SQL tutorials</a>
-            </div>
-        </div>
-         </div>
-        <div class="col-md-4">
-            <div class="text-center">
-                <img src="https://tse3.mm.bing.net/th?id=OIP.QQUTcBAmVvxoiZ0CRJy5rwHaHa&pid=Api&P=0&h=220" alt="Course 3" class="course-img"> <!-- Replace with course 3 image -->
-                <h3>HTML 5</h3>
-                <!-- Replace "course3_link" with the actual link for course 3 -->
-                <a href="https://youtu.be/Z5qOImZy3Vw?feature=shared" class="btn btn-primary">Click here for HTML course</a>
-            </div>
-        </div>
-      </div>
-        <div class="col-md-4">
-            <div class="text-center">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfOJzgRJJvZd4vZVMJM00oXFChBNoZWMpcHQ&s" alt="Course 2" class="course-img"> <!-- Replace with course 2 image -->
-                <h3>Projects on Deep Learning and Django</h3>
-                <!-- Replace "course2_link" with the actual link for course 2 -->
-                <a href="https://www.youtube.com/watch?v=gQXl9Gg6L-M&list=PLMZzeNdaHr6hARfho3vVDyigbhr6yXXSF">click here for Deep Learning and Full Stack python projects tutorials</a>
-            </div>
-        </div>
-        <h1><a href="contact.html">For Further Queries and to reach us click here</a></h1>
+                <a href="https://www.youtube.com/watch?v=z2MaZgo-jfo&list=PLMZzeNdaHr6g4SXEvAHC9KH4plSB4L6uu" class="btn btn-primary">SQL Tutorials</a>
+            </td>
+            <td>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.QQUTcBAmVvxoiZ0CRJy5rwHaHa&pid=Api&P=0&h=220" alt="HTML5" class="course-img">
+                <h3>HTML5</h3>
+                <a href="https://youtu.be/Z5qOImZy3Vw?feature=shared" class="btn btn-primary">HTML Tutorials</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfOJzgRJJvZd4vZVMJM00oXFChBNoZWMpcHQ&s" alt="Deep Learning" class="course-img">
+                <h3>Deep Learning & Django</h3>
+                <a href="https://www.youtube.com/watch?v=gQXl9Gg6L-M&list=PLMZzeNdaHr6hARfho3vVDyigbhr6yXXSF" class="btn btn-primary">Projects Tutorials</a>
+            </td>
+        </tr>
+    </table>
+    <div class="text-center">
+        <h2><a href="contact.html">For Further Queries, Click Here</a></h2>
     </div>
 </div>
-
-
-
-
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

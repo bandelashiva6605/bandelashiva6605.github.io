@@ -3,44 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python And Full Stack</title>
+    <title>Contact Us</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f4f4f4;
             font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
 
-        /* Hero Section */
-        .hero {
-            background-image: url('https://tse1.mm.bing.net/th?id=OIP.gCZRWvepgNfcvXFjTkYqxgHaEN&pid=Api&P=0&h=220');
-            background-size: cover;
-            background-position: center;
+        /* Header Section */
+        .header {
+            background-color: #007bff;
             color: #fff;
             text-align: center;
-            padding: 120px 20px;
-            position: relative;
+            padding: 50px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .hero h1 {
+        .header h1 {
             font-size: 3rem;
-            font-weight: bold;
-            animation: fadeIn 3s ease-in-out;
+            animation: fadeIn 2s ease-in-out;
         }
 
-        .hero p {
-            font-size: 1.5rem;
-            margin-top: 10px;
-            animation: slideIn 4s ease-in-out;
-        }
-
-        .hero img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-top: 20px;
-            animation: bounce 2s infinite;
+        .header p {
+            font-size: 1.2rem;
+            animation: slideIn 3s ease-in-out;
         }
 
         @keyframes fadeIn {
@@ -54,215 +44,115 @@
 
         @keyframes slideIn {
             from {
-                transform: translateX(-100%);
+                transform: translateY(-50%);
             }
             to {
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes bounce {
-            0%, 100% {
                 transform: translateY(0);
             }
-            50% {
-                transform: translateY(-10px);
+        }
+
+        /* Contact Details Section */
+        .contact-container {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
             }
         }
 
-        /* Courses Section */
-        .course-section {
-            margin: 40px auto;
+        .contact-container h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
         }
 
-        .course-card {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .course-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .course-card img {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .course-card h3 {
-            font-size: 1.25rem;
-            margin-top: 15px;
-        }
-
-        .course-card p {
-            font-size: 0.9rem;
+        .contact-container p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
             color: #555;
         }
 
-        .btn {
+        .contact-container a {
+            font-size: 1.1rem;
+            color: #007bff;
+            text-decoration: none;
+            background: #f4f4f4;
+            padding: 10px 20px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            display: inline-block;
             margin-top: 10px;
         }
 
-        /* Scroll Button */
-        .scroll-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            padding: 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .scroll-btn:hover {
-            background-color: #0056b3;
-            transform: scale(1.1);
-        }
-
-        /* Contact Section */
-        .contact-section {
+        .contact-container a:hover {
             background: #007bff;
-            color: #fff;
-            padding: 40px 20px;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-container i {
+            margin-right: 10px;
+        }
+
+        /* Footer */
+        footer {
             text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
             margin-top: 50px;
         }
 
-        .contact-section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .contact-section p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .contact-section a {
-            display: inline-block;
-            background: #fff;
+        footer a {
             color: #007bff;
-            font-size: 1.1rem;
-            padding: 10px 20px;
-            border-radius: 5px;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: color 0.3s ease;
         }
 
-        .contact-section a:hover {
-            background: #0056b3;
-            color: #fff;
-        }
-
-        .contact-section i {
-            margin-right: 10px;
+        footer a:hover {
+            color: #0056b3;
         }
     </style>
 </head>
 <body>
 
-<!-- Hero Section -->
-<div class="hero">
-    <img src="shivabandela.jpeg" alt="Shiva Bandela">
-    <h1>Welcome to Tech Courses</h1>
-    <p>Your journey to mastering Python, SQL, Django, and Deep Learning begins here!</p>
+<!-- Header Section -->
+<div class="header">
+    <h1>Contact Details</h1>
+    <p>Reach out to me for collaborations, queries, or guidance!</p>
 </div>
 
-<!-- Courses Section -->
-<div class="container">
-    <div class="row course-section">
-        <!-- Course 1 -->
-        <div class="col-md-6">
-            <div class="course-card">
-                <img src="https://tse4.mm.bing.net/th?id=OIP.QkSSprAmEIPRhirfLO8L3QHaEK&pid=Api&P=0&h=220" alt="Basic Python">
-                <h3>Basic Coding using Python</h3>
-                <p>Learn the fundamentals of Python programming, covering syntax, loops, and functions.</p>
-                <a href="https://youtube.com/playlist?list=PLMZzeNdaHr6hc9ad_Q6YZwLzchrTRNCBl&feature=shared" class="btn btn-primary">Start Now</a>
-            </div>
-        </div>
-        <!-- Course 2 -->
-        <div class="col-md-6">
-            <div class="course-card">
-                <img src="https://tse4.mm.bing.net/th?id=OIP.QkSSprAmEIPRhirfLO8L3QHaEK&pid=Api&P=0&h=220" alt="Advanced Python">
-                <h3>Advanced Coding using Python</h3>
-                <p>Dive deep into advanced Python concepts like decorators, OOP, and more.</p>
-                <a href="https://youtube.com/playlist?list=PLMZzeNdaHr6iXLpY5Ee73ynjGpkW9QsXs&feature=shared" class="btn btn-primary">Learn More</a>
-            </div>
-        </div>
-    </div>
-    <div class="row course-section">
-        <!-- Course 3 -->
-        <div class="col-md-6">
-            <div class="course-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2W3L6Zuv5Ogc6vJIK8u1wGKqxkB7aatZPEGsPn59auB-ya2-m82AE6vY&s" alt="SQL">
-                <h3>SQL</h3>
-                <p>Master SQL to manage, query, and manipulate databases effectively.</p>
-                <a href="https://www.youtube.com/watch?v=z2MaZgo-jfo&list=PLMZzeNdaHr6g4SXEvAHC9KH4plSB4L6uu" class="btn btn-primary">Watch Tutorials</a>
-            </div>
-        </div>
-        <!-- Course 4 -->
-        <div class="col-md-6">
-            <div class="course-card">
-                <img src="https://tse3.mm.bing.net/th?id=OIP.QQUTcBAmVvxoiZ0CRJy5rwHaHa&pid=Api&P=0&h=220" alt="HTML5">
-                <h3>HTML5</h3>
-                <p>Build modern, responsive websites with ease using HTML5.</p>
-                <a href="https://youtu.be/Z5qOImZy3Vw?feature=shared" class="btn btn-primary">Start Learning</a>
-            </div>
-        </div>
-    </div>
-    <div class="row course-section">
-        <!-- Course 5 -->
-        <div class="col-md-12">
-            <div class="course-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfOJzgRJJvZd4vZVMJM00oXFChBNoZWMpcHQ&s" alt="Deep Learning Projects">
-                <h3>Deep Learning & Django Projects</h3>
-                <p>Get hands-on experience with real-world projects in AI and full-stack development.</p>
-                <a href="https://www.youtube.com/watch?v=gQXl9Gg6L-M&list=PLMZzeNdaHr6hARfho3vVDyigbhr6yXXSF" class="btn btn-primary">Explore Projects</a>
-            </div>
-        </div>
-    </div>
+<!-- Contact Details Section -->
+<div class="contact-container">
+    <h2>Let's Connect</h2>
+    <p><strong>Email:</strong> <a href="mailto:bandelashiva6605aiml@gmail.com">bandelashiva6605aiml@gmail.com</a></p>
+    <p>Explore my professional journey and links below:</p>
+
+    <!-- Interactive Buttons -->
+    <a href="https://www.linkedin.com/in/bandelashiva" target="_blank"><i class="fab fa-linkedin"></i> Visit LinkedIn</a>
+    <a href="https://linktr.ee/bandelashiva" target="_blank"><i class="fas fa-link"></i> Visit Linktree</a>
 </div>
 
-<!-- Contact Section -->
-<div class="contact-section">
-    <h2>Have Questions or Need Assistance?</h2>
-    <p>Contact us for more details or guidance on our courses.</p>
-    <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
-</div>
-
-<!-- Scroll to Top Button -->
-<button class="scroll-btn" id="scroll-btn"><i class="fas fa-chevron-up"></i></button>
-
-<script>
-    // Smooth scrolling for the "Scroll to Top" button
-    const scrollBtn = document.getElementById('scroll-btn');
-
-    scrollBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Show/hide scroll button based on scroll position
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 200) {
-            scrollBtn.style.display = 'block';
-        } else {
-            scrollBtn.style.display = 'none';
-        }
-    });
-</script>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Tech Courses by Shiva Bandela. All rights reserved.</p>
+    <p>Return to <a href="index.html">Homepage</a>.</p>
+</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
